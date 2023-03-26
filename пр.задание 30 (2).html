@@ -1,0 +1,84 @@
+<html>
+ <head>
+       <title>Моя первая интернет страница</title>
+ </head>
+<body bgcolor="Orange">
+  <div id='preloader'>
+    <img src="preloader.gif" alt="preloader">
+</div>
+<style>
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+#preloader.hide-preloader {
+    animation: hidePreloader 1s;
+}
+
+#preloader.preloader-hidden {
+    display: none;
+}
+
+</style>
+<script>
+window.onload = function() {
+    let preloader = document.getElementById('preloader');
+    preloader.classList.add('hide-preloader');
+    setInterval(function() {
+          preloader.classList.add('preloader-hidden');
+    }, 2000);
+}
+</script>
+<center>Сегодня замечательный день. <br>Я сделал свою первую интернет страничку.</center>
+<justify>  <h1><b>Разница между апельсином и мандарином</b></h1>
+  Запах апельсинов и мандаринов у многих ассоциируется с Новым годом, нарядной елкой, 
+  боем курантов и пузырьками шампанского.
+  <p> Причем мы не всегда задумываемся, 
+  что на самом деле такие привычные для нас цитрусовые, которые мы считаем практически одинаковыми, 
+  на самом деле имеют много отличий.</p>
+  <p>Апельсины и мандарины близки по своему составу и калорийности. 
+    Примерная калорийность одного апельсина 43 ккал, а мандарина - 40 ккал. 
+    Витамином С и органическими кислотами богаче апельсины, но мандарины содержат больше сахарозы 
+    и поэтому они слаще по вкусу. Как в мандаринах, так и в апельсинах содержится витамин Д, 
+    предотвращающий развитие рахита у детей, и витамин К, обеспечивающий эластичность сосудов и 
+    препятствующий развитию болезней сердечнососудистой системы.</p>
+  
+  </justify>
+
+    <table bgcolor="OrangeRed">
+        <col span="2" style="background:rgb(235, 171, 75)">
+  </colgroup>
+        <tr>
+          <th>апельсин</th>
+          <th>мандарин</th>
+        </tr>
+        <tr>
+          <td> Апельсиновые деревья плодоносят практически круглый год</td>
+          <td> созревают зимой</td>
+        </tr>
+        <tr>
+          <td>более твердый и плотный, с толстой кожурой, которую очень тяжело очистить руками</td>
+          <td>Кожура мандарина тоньше и мягче, чистится легко</td>
+        </tr>
+        <tr>
+            <td>Кошки ненавязчивы</td>
+            <td>Многие кошки, а особенно коты любят ставить метки</td>
+          </tr>
+          <tr>
+            <td>на вкус имеет легкую кислинку и горчинку</td>
+            <td>за счет более высокого содержания сахара, более сладкий</td>
+          </tr>
+      </table>
+     
+      <a href="https://thedifference.ru/chem-otlichaetsya-apelsin-ot-mandarina/">Больше информации</a>
+</body>
+</html>	
+
+
